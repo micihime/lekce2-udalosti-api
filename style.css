@@ -125,3 +125,7 @@ li {
 .div-bold {
 	font-weight: 900;
 }
+
+.text-red {
+	color: red;
+}
