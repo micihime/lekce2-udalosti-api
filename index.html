@@ -18,8 +18,16 @@
 	<div class="ctverecek zluty"></div>
 	<div class="ctverecek zeleny"></div>
 	<img class="obrazek" src="obrazky/kocka.jpg">
-	<button class="tlacitko">Čudlajs</button>
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio> -->
+	<button class="tlacitko">Čudlajs</button> -->
+
+	<div style="font-size: 16px;" onmouseenter="makeBold()" onmouseout="makeThin()" id="myDiv">MUSIC</div>
+	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<button onclick="play('#js-audio')">Play</button>
+	<button onclick="pause('#js-audio')">Pause</button>
+	<button onclick="stop('#js-audio')">Stop</button>
+	<button onclick="soundOff('#js-audio')">Sound Off</button>
+	<button onclick="soundHalf('#js-audio')">Sound Half</button>
+	<button onclick="soundFull('#js-audio')">Sound Full</button>
 
 	<script type="text/javascript" src="main.js" ></script>
 </body>

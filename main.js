@@ -26,3 +26,35 @@ function increaseSize() {
     let fontSizeNew = parseFloat(document.querySelector("#myDiv").style.fontSize) + 1;
     document.querySelector("#myDiv").style.fontSize = fontSizeNew + "px";
 }
+
+function play(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    audioElement.play();
+}
+
+function pause(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    audioElement.pause();
+}
+
+function stop(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    //audioElement.stop();
+    audioElement.pause();
+    audioElement.currentTime = 0;
+}
+
+function soundOff(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    audioElement.volume = 0;
+}
+
+function soundHalf(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    audioElement.volume = 0.5;
+}
+
+function soundFull(elementSelector) {
+    let audioElement = document.querySelector(elementSelector);
+    audioElement.volume = 1;
+}
