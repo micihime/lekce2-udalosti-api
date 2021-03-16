@@ -121,3 +121,7 @@ li {
 	color: black;
 	border-color: blue;
 }
+
+.div-bold {
+	font-weight: 900;
+}
